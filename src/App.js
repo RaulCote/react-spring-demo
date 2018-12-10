@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { Spring } from 'react-spring';
+// import Counter from './components/Counter';
+import HookedComponent from './components/HooksDelay1';
+import HookedSecondIn from './components/HooksDelay2';
+import HookedThirdIn from './components/HooksDelay3';
 
 class App extends Component {
   render() {
@@ -10,10 +13,11 @@ class App extends Component {
         { props => ( 
           <div  className="App" style={ props }> 
             <div>                 
-              <header className="App-header" >                     
-                <img src={logo} className="App-logo" alt="logo" />                    
-                <p>Edit<code>src/App.js</code> and save to reload.</p>                       
-                <a className="App-link" href="https://reactjs.org" target="_blank" rel="noopener noreferrer">Learn React</a>                   
+              <header className="App-header" >                                        
+                {/* <Counter />          */}
+                <HookedComponent />      
+                <HookedSecondIn />  
+                <HookedThirdIn />
               </header>                 
             </div>               
           </div> 
